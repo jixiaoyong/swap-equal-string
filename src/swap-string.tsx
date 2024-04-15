@@ -35,10 +35,11 @@ export default function Command() {
     <List>
       <List.Item
         id="string"
-        title="Swap Variable and String "
+        title="将剪贴板中字符串移动到等号左侧并插入到当前位置"
+        subtitle="比如 a == 'a'，修改后为：'a' == a"
         actions={
           <ActionPanel>
-            <Action title="Swap and Copy to Clipboard" onAction={swapVariableAndString} />
+            <Action title="替换并插入" onAction={swapVariableAndString} />
           </ActionPanel>
         }
       />
